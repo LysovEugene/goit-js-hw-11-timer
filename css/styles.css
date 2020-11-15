@@ -9,12 +9,13 @@ body {
 }
 
 .timer {
-  background-color: #071af3;
+  background-color: greenyellow;
   display: flex;
-  width: 500px;
-  height: 150px;
+  width: 450px;
+  height: 200px;
   justify-content: space-around;
   align-items: center;
+  border-radius: 15px;
 }
 
 .field {
@@ -27,7 +28,7 @@ body {
   display: block;
   border-radius: 5px;
   font-size: 50px;
-  background-image: linear-gradient(#fff, #2ffa07);
+  background-image: linear-gradient(#fff, yellow);
   font-family: "Open Sans", sans-serif;
 }
 
