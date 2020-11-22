@@ -2,9 +2,9 @@
 // которого создает новый таймер с настройками.
 
 class CountdownTimer {
-  constructor(selector, targetDate) {
-    this.selector = document.querySelector(selector);
-    this.targetDate = new Date(targetDate);
+ constructor({ selector, targetDate }) {
+    this.selector = selector;
+    this.targetDate = targetDate;
   }
 
   startCountdown() {
@@ -53,5 +53,9 @@ class CountdownTimer {
   }
 }
 
-const countdownTimer = new CountdownTimer("#timer-1", "November 15, 2021, 12:15");
+const countdownTimer = new CountdownTimer({
+  selector: "#timer-1",
+  targetDate: new Date('November 27, 2020, 12:15')
+});
 countdownTimer.startCountdown();
+
